@@ -1,3 +1,1 @@
-export default () => {
-  // TO IMPLEMENT IN ANOTHER PR
-};
+export default (number) => number * (number < 0 ? -1 : 1);
