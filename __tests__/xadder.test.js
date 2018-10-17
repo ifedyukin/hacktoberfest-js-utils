@@ -10,7 +10,7 @@ describe('xadder', () => {
     });
 
     test('xadder of 1000 followed by 2000 is 3000', () => {
-        expect(xadder(1000)(2000)).toBe(4000);
+        expect(xadder(1000)(2000)).toBe(3000);
     });
 
     test('xadder of -4000 followed by -3000 is -7000', () => {
