@@ -18,13 +18,13 @@ yarn
 
 1. Find an issue that is **not assigned** yet
 2. Implement it so that it passes all the tests (use `yarn test src/[methodName].test.js` to run the tests)
-3. Add a skeleton of a new method along with new test suit for it
-4. Now we have fixed a method, written the skeleton of a new one, and a test suit to accompany it, so we can push our changes and open a **pull request**.
+3. Add a skeleton of a new method along with new test suite for it
+4. Now we have fixed a method, written the skeleton of a new one, and a test suite to accompany it, so we can push our changes and open a **pull request**.
 5. Create an issue for your new feature
 
 ## Rules
 
-- Each PR should contain **3 files**: implementation of the method you've been assigned to, a skeleton of a new one for someone else to work on and a test suit for it.
+- Each PR should contain **3 files**: implementation of the method you've been assigned to, a skeleton of a new one for someone else to work on and a test suite for it.
 - Make sure your implementation passes the previous tests before opening a Pull Request.
 - Do not use any npm functions or javascript built-in methods.
 
@@ -42,7 +42,7 @@ export default () => {
 };
 ```
 
-### Test suit example
+### Test suite example
 
 ```javascript
 import abs from '../src/abs';
