@@ -1,6 +1,6 @@
 import atbash from '../src/atbash';
 
-describe('abs', () => {
+describe('atbash', () => {
   test('Correct alphabet substitution', () => {
     expect(atbash('ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe(
       'ZYXWVUTSRQPONMLKJIHGFEDCBA',
