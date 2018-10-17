@@ -29,6 +29,6 @@ const groupBy = (data, property) => {
     }]
    }
   */
-}
+};
 
 export default groupBy;
