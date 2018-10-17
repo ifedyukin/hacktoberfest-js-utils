@@ -3,13 +3,24 @@
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "format": "prettier --write ./**/*.{js,json,md}",
+    "precommit": "lint-staged",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "./**/*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-jest": "^23.6.0",
     "babel-preset-env": "^1.7.0",
-    "jest": "^23.6.0"
-  },
-  "scripts": {
-    "test": "jest"
+    "husky": "^1.1.2",
+    "jest": "^23.6.0",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.14.3"
   }
 }

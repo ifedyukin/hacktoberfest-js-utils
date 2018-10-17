@@ -1,7 +1,8 @@
 # Hacktoberfest 2018 JS Utils
+
 [![Build Status](https://travis-ci.org/ifedyukin/hacktoberfest-js-utils.svg?branch=master)](https://travis-ci.org/ifedyukin/hacktoberfest-js-utils)
 
-The point of this repository to build a suite of javascript methods by the time [hacktoberfest](https://hacktoberfest.digitalocean.com/) ends! Let's get some T-shirts!    
+The point of this repository to build a suite of javascript methods by the time [hacktoberfest](https://hacktoberfest.digitalocean.com/) ends! Let's get some T-shirts!  
 [Original repo](https://github.com/rgehan/hacktoberfest-2k18-katas) by [@rgehan](https://github.com/rgehan).
 
 ## Installation
@@ -18,7 +19,7 @@ yarn
 1. Find an issue that is **not assigned** yet
 2. Implement it so that it passes all the tests (use `yarn test src/[methodName].test.js` to run the tests)
 3. Add a skeleton of a new method along with new test suit for it
-4. Now we have fixed a method, written the skeleton of a new one, and a test suit to accompany it, so we can push our changes and open a **pull request**. 
+4. Now we have fixed a method, written the skeleton of a new one, and a test suit to accompany it, so we can push our changes and open a **pull request**.
 5. Create an issue for your new feature
 
 ## Rules
@@ -28,11 +29,13 @@ yarn
 - Do not use any npm functions or javascript built-in methods.
 
 ### Project Structure
+
 All methods will live in the `src` directory. They should be written as [methodName].js.
 
 All tests will live in the `test` directory. A test file should be formatted `[methodName].test.js` to reflect what method is being tested.
 
 ### A skeleton of new method
+
 ```javascript
 export default () => {
   // TO IMPLEMENT IN ANOTHER PR
@@ -40,6 +43,7 @@ export default () => {
 ```
 
 ### Test suit example
+
 ```javascript
 import abs from '../src/abs';
 

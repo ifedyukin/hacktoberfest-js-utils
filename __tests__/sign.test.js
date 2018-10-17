@@ -6,7 +6,7 @@ describe('sign', () => {
   });
 
   test('sign of "4" is 1', () => {
-    expect(sign("4")).toBe(1);
+    expect(sign('4')).toBe(1);
   });
 
   test('sign of -5 is -1', () => {
@@ -26,7 +26,7 @@ describe('sign', () => {
   });
 
   test('sign of "foo" is NaN', () => {
-    expect(sign("foo")).toBe(NaN);
+    expect(sign('foo')).toBe(NaN);
   });
 
   test('sign of nothing is NaN', () => {
