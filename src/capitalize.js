@@ -12,4 +12,8 @@ const capitalize = str => {
   return firstPart.toUpperCase() + secondPart.toLowerCase();
 };
 
+export const anotherCapitalize = str => {
+  return str[0].toUpperCase() + str.slice(1).toLowerCase();
+};
+
 export default capitalize;
