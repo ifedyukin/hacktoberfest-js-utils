@@ -32,7 +32,7 @@ describe('map', () => {
 
   test('stringify all elements in list', () => {
     // also define stringify function
-      expect(map(arr1, stringify)).toEqual(['2', '4', '6']);
+      expect(map(arr1, stringify)).toEqual(['1', '2', '3']);
    
   });
 });
