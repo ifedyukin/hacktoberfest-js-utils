@@ -1,7 +1,7 @@
 import flat from '../src/flat';
 
 describe('flat', () => {
-  let nestedList;
+  let nestedList=[];
 
   beforeEach(() => {
     nestedList[0] = [1, 2, 3];
