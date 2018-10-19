@@ -1,7 +1,11 @@
 import flat from '../src/flat';
 
 describe('flat', () => {
-  let nestedList = [];
+  let nestedList;
+  let nestedList0 = [1, 2, 3];
+  let nestedList1 = [1, 2, 3, [4, 5]];
+  let nestedList2 = [1, 2, 3, [4, 5, [6, 7, [8]]]];
+  let nestedList3 = [1, 2, 3, [4, 5, 6, 7, 8]];
 
   beforeEach(() => {
     nestedList[0] = [1, 2, 3];
