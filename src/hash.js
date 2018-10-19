@@ -1,11 +1,15 @@
-const hash = (randomArgument) => {
-    /**
-     * implement hash function which returns random value.
-     * and returns the same value for the same passed argumetns
-     * hash(A) === hash(A) && hash(A) !== hash(B) more cases in the test file
-     *
-     * Good luck
-     */
-};
+export default randomArgument => {
+  randomArgument = randomArgument + ''; // Null safe conversion to String
 
-export default pow;
+  var hashCode = 0,
+    i,
+    chr,
+    len;
+  if (randomArgument.length === 0) return hashCode;
+  for (i = 0, len = randomArgument.length; i < len; i++) {
+    chr = randomArgument.charCodeAt(i);
+    hashCode = (hashCode << 5) - hashCode + chr;
+    hashCode |= 0; // Convert to 32bit integer
+  }
+  return hashCode;
+};
