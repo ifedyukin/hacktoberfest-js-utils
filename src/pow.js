@@ -1,3 +1,7 @@
 export default (number, power) => {
-  // TO IMPLEMENT IN https://github.com/ifedyukin/hacktoberfest-js-utils/issues/45
-}
+  let result = 1;
+  for (let i = 0; i < power; i++) {
+    result *= number;
+  }
+  return result;
+};
