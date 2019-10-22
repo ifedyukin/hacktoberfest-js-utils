@@ -1,7 +1,5 @@
 # Hacktoberfest 2018 JS Utils
 
-[![Build Status](https://travis-ci.org/ifedyukin/hacktoberfest-js-utils.svg?branch=master)](https://travis-ci.org/ifedyukin/hacktoberfest-js-utils)
-
 The point of this repository to build a suite of javascript methods by the time [hacktoberfest](https://hacktoberfest.digitalocean.com/) ends! Let's get some T-shirts!  
 [Original repo](https://github.com/rgehan/hacktoberfest-2k18-katas) by [@rgehan](https://github.com/rgehan).
 
