@@ -17,20 +17,22 @@ let MATRIX = [
 
 const getRow = n => MATRIX[n];
 
-const getColumn = n => MATRIX.reduce((col, row) => col.concat(row[n]), []);
+const getColumn = n => MATRIX
+  .reduce((col, row) => col.concat(row[n]), []);
 
 const clearArray = array => array.filter(Boolean);
 
-const deleteRow = n => {
+const deleteRow = (n) => {
   delete MATRIX[n];
   MATRIX = clearArray(MATRIX);
 };
 
-const deleteColumn = n => {
-  MATRIX = MATRIX.reduce((matrix, row) => {
-    delete row[n];
-    return matrix.concat([clearArray(row)]);
-  }, []);
+const deleteColumn = (n) => {
+  MATRIX = MATRIX
+    .reduce((matrix, row) => {
+      delete row[n];
+      return matrix.concat([clearArray(row)]);
+    }, []);
 };
 
 const getArrayByDirection = (position, direction) => {
@@ -47,7 +49,7 @@ const getArrayByDirection = (position, direction) => {
   }
 };
 
-const getNextDirection = position => {
+const getNextDirection = (position) => {
   const [i, j] = position;
 
   if (j === 0) {
@@ -99,7 +101,7 @@ const spiral = () => {
 
     if (!MATRIX || !MATRIX[0]) break;
     POSITION = getNextStepByDirection(POSITION, nextDirection);
-  }
+  };
 
   return RESULT;
 };
